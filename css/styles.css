@@ -57,7 +57,7 @@
 }
 /*MYUX*/
 .myuxGrid {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
     display: grid;
@@ -84,6 +84,53 @@
     .myuxGrid {
         grid-template-columns: 1fr;
     }
+}
+/*MYWORK*/
+#myworkGrid {
+    display: grid;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "parkImage parkCase parkCase"
+    "oldCase oldCase oldImage";
+}
+#parkImage {
+    grid-area: parkImage;
+}
+#parkCase {
+    grid-area: parkCase;
+}
+#oldCase {
+    grid-area: oldCase;
+}
+#oldImage {
+    grid-area: oldImage;
+}
+.myworkGridArea {
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}  
+.myworkGridArea img {
+    max-width: 100%;
+    height: auto;
+}
+.myuxworkArea h3 {
+    margin-top: 0;
+    text-align: center;
+}
+.myuxworkArea p {
+    margin-top: 0;
+    text-align: center;
 }
 /*DEFAULTS*/
 h1 {
